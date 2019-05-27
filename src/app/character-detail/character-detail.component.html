@@ -1,0 +1,17 @@
+<div class="background2">
+  <div *ngIf="character" class="container">
+    <h2>{{character.name}} Details</h2>
+    <div><span>Id: </span> {{character.id}}</div>
+    <div><span>Name: </span> {{character.name}}</div>
+    <div><span>Description: </span> {{character.description}}</div>
+
+    <div>
+      <label>Update Description:
+        <input [(ngModel)]="character.description" placeholder="character.name" />
+      </label>
+    </div>
+
+    <button (click)="goBack()">Go Back</button> 
+
+  </div>
+</div>
