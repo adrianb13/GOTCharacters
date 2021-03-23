@@ -1,6 +1,7 @@
 .background2 {
   background: lightgray;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  min-height: 100%;
   padding: 20px;
   margin-left: 0;
 }
