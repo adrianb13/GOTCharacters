@@ -10,6 +10,10 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "deploy-ghpages": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
+        },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
@@ -116,13 +120,8 @@
               "devServerTarget": "GameOfThrones:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
         }
       }
-    }
-  },
+    }},
   "defaultProject": "GameOfThrones"
 }
